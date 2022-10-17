@@ -1,0 +1,20 @@
+body{
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: stretch;
+}
+
+header, footer, div{
+    width: 100%;
+}
+
+header, footer{
+    background-color: lightgray;
+    min-height: 15vh;
+}
+
+div{
+    background-color: aliceblue;
+    flex-grow: 1;
+}
