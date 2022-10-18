@@ -12,12 +12,30 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    border-right: solid black;
+    gap: 100px;
 }
 
 #site-icon{
     width: 100px;
     height: 100px;
     margin-top: 20px;
+    border-radius: 5px;
+}
+
+#buttons{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+button{
+    background-color: #63350F;
+    border: solid #EBC6B5;
+    color: white;
+    height: 30px;
+    width: 100px;
+    border-radius: 5px;
 }
 
 #main-page{
@@ -39,13 +57,11 @@ header, footer{
 }
 
 h1{
-    color: white;
+    color: #63350F;
 }
 
-
-
 #main-content{
-    background-color: white;
+    background-color: black;
     flex-grow: 1;
     width: 100%;
 }
