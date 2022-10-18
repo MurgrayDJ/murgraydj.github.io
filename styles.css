@@ -1,13 +1,6 @@
-/* html{
-    display:flex;
-    justify-content: center;
-    background-color: rgb(18, 17, 80);
-} */
-
 body{
     display: flex;
     min-height: 100vh;
-    /* width: 100vh; */
     margin: 0;
     justify-content: stretch;
 }
@@ -15,7 +8,16 @@ body{
 #nav-bar{
     height: 100vh;
     width: 200px;
-    background-color: rgb(138, 215, 238);
+    background-color: #63350F;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#site-icon{
+    width: 100px;
+    height: 100px;
+    margin-top: 20px;
 }
 
 #main-page{
@@ -26,7 +28,7 @@ body{
 
 header{
     display: flex;
-    background-color: pink;
+    background-color: #EBC6B5;
     justify-content: center;
     align-items: center;
 }
@@ -43,11 +45,11 @@ h1{
 
 
 #main-content{
-    background-color: rgb(18, 17, 80);
+    background-color: white;
     flex-grow: 1;
     width: 100%;
 }
 
 footer{
-    background-color: pink;
+    background-color: #EBC6B5;
 }
