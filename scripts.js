@@ -1,7 +1,7 @@
 const resume_btn = document.getElementById("resume-btn");
 resume_btn.addEventListener("click", () => {
-    const resume_pdf = document.getElementById("resume-pdf");
-    if(!resume_pdf){
+    const resumePDF = document.getElementById("resume-pdf");
+    if(!resumePDF){
         embedResume();
     }
 })
@@ -18,3 +18,19 @@ function embedResume(){
 
     contentArea.appendChild(resumePDF);
 }
+
+const aboutBtn = document.getElementById("about-btn");
+aboutBtn.addEventListener("click", () => {
+    const resumePDF = document.getElementById("resume-pdf");
+    if(resumePDF){
+        resumePDF.remove();
+    }
+
+    const aboutMe = document.createElement("Object");
+    aboutMe.setAttribute("data", "text_files/aboutme.txt");
+    aboutMe.id = "about-me";
+    aboutMe.style.height = "300px";
+    aboutMe.style.width = "500px";
+
+    contentArea.appendChild(aboutMe);
+})

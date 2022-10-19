@@ -68,10 +68,20 @@ h1{
     background-color: #635448;
     flex-grow: 1;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 iframe{
     border: none;
+}
+
+#about-me{
+    background-color: #EBC6B5;
+    color: #635448;
+    border-radius: 15px;
+    font-family:'Times New Roman', Times, serif;
 }
 
 footer{
