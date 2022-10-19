@@ -70,6 +70,10 @@ h1{
     width: 100%;
 }
 
+iframe{
+    border: none;
+}
+
 footer{
     background-color: #EBC6B5;
 }
