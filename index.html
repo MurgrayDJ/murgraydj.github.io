@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="styles.css">
-        <script src="scripts.js"></script>
+        <script src="scripts.js" defer></script>
 
         <title>Murgray's Webpage</title>
         <link rel="icon" type="image/x-icon" href="images/favicon.ico">
@@ -12,10 +12,10 @@
         <div id="nav-bar">
             <img src="images/Murgray_chibi_logo.png" alt="Illustrated face of Murgray" id="site-icon">
             <div id="buttons">
-                <button>About Me</button>
-                <button>Resume</button>
-                <button>Projects</button>
-                <button>Comics</button>
+                <button type="button" id="about-btn">About Me</button>
+                <button type="button" id="resume-btn">Resume</button>
+                <button type="button" id="project-btn">Projects</button>
+                <button type="button" id="comic-btn">Comics</button>
             </div>
         </div>
 
@@ -26,8 +26,8 @@
     
     
             
-            <div id="main-content">
-                
+            <div id="content-area">
+                <!--Content is appended here-->
             </div>
     
             <footer>
