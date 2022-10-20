@@ -2,6 +2,6 @@ Hi! My name is Murgray.
 
 I am an Aspiring Full-Stack Engineer. I graduated in June of 2021 from Queens College with a BA in Computer Science.
 
-I am currently studying Ruby, and then will eventually learn Ruby on Rails. The languages that I have the most experience with are Java, C++, JavaScript, HTML, and CSS. I have some minor experience with Python as well.
+I am currently studying Ruby, and will eventually learn Ruby on Rails. The languages that I have the most experience with are Java, C++, JavaScript, HTML, and CSS. I have some minor experience with Python as well.
 
 In my free time, I like to draw, read, play video games, and ride rollercoasters.

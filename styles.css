@@ -48,16 +48,21 @@ button:hover{
     flex-grow: 1;
 }
 
-header{
+/* header{
     display: flex;
-    background-color: #EBC6B5;
     justify-content: center;
     align-items: center;
-}
+} */
 
 header, footer{
     width: 100%;
     min-height: 15vh;
+    background-color: #EBC6B5;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 h1{
@@ -84,6 +89,9 @@ iframe{
     font-family:'Times New Roman', Times, serif;
 }
 
-footer{
-    background-color: #EBC6B5;
+#copyright{
+    color: #63350F;
+    text-align: center;
+    bottom: 0;
+    position: fixed;
 }

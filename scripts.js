@@ -11,7 +11,6 @@ function embedResume(){
     clearDisplay();
 
     const resumePDF = document.createElement("iframe");
-    let html = '<body></body>';
     resumePDF.setAttribute("src", "https://drive.google.com/file/d/1eHoTQjB85OfSjEqraGX0BZoBDA4yCAka/preview");
     resumePDF.setAttribute("allow", "autoplay");
     resumePDF.id = "resume-pdf";
