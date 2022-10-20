@@ -3,11 +3,13 @@ body{
     min-height: 100vh;
     margin: 0;
     justify-content: stretch;
+    overflow: hidden;
 }
 
 #nav-bar{
     height: 100vh;
     width: 200px;
+    flex-shrink: 0;
     background-color: #63350F;
     display: flex;
     flex-direction: column;
@@ -48,12 +50,6 @@ button:hover{
     flex-grow: 1;
 }
 
-/* header{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} */
-
 header, footer{
     width: 100%;
     min-height: 15vh;
@@ -76,6 +72,8 @@ h1{
     display: flex;
     justify-content: center;
     align-items: center;
+    white-space: nowrap;
+    overflow-x: auto;
 }
 
 iframe{
@@ -87,6 +85,25 @@ iframe{
     color: #635448;
     border-radius: 15px;
     font-family:'Times New Roman', Times, serif;
+}
+
+#project-group{
+    height: 100%;
+    width: 100vh;
+    display: flex;
+    margin-right: auto;
+    align-items:center;
+    flex-shrink: 1;
+}
+
+.project{
+    height: 300px;
+    width: 300px;
+    background-color: #EBC6B5;
+    border-radius: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
+    flex-shrink: 0;
 }
 
 #copyright{

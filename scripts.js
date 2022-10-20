@@ -1,3 +1,16 @@
+//All content is appended here (this is the "display")
+const contentArea = document.getElementById("content-area");
+
+//Helper function
+function clearDisplay(){
+    const contentArea = document.getElementById("content-area");
+    if(contentArea.lastChild){
+        contentArea.removeChild(contentArea.lastChild);
+    }
+}
+
+
+/***************Resume Section***************/
 const resume_btn = document.getElementById("resume-btn");
 resume_btn.addEventListener("click", () => {
     const resumePDF = document.getElementById("resume-pdf");
@@ -6,7 +19,6 @@ resume_btn.addEventListener("click", () => {
     }
 })
 
-const contentArea = document.getElementById("content-area");
 function embedResume(){
     clearDisplay();
 
@@ -19,7 +31,11 @@ function embedResume(){
 
     contentArea.appendChild(resumePDF);
 }
+/***************Resume Section***************/
 
+
+
+/***************About Me Section***************/
 const aboutBtn = document.getElementById("about-btn");
 aboutBtn.addEventListener("click", () => {
     const aboutMe = document.getElementById("about-me");
@@ -39,10 +55,36 @@ function displayAboutMe(){
 
     contentArea.appendChild(aboutMe);
 }
+/***************About Me Section***************/
 
-function clearDisplay(){
-    const contentArea = document.getElementById("content-area");
-    if(contentArea.lastChild){
-        contentArea.removeChild(contentArea.lastChild);
+
+
+
+/***************Projects Section***************/
+const projectBtn = document.getElementById("project-btn");
+projectBtn.addEventListener("click", () => {
+    const projectGroup = document.getElementById("project-group");
+    if(!projectGroup){
+        createProjectGroup();
+    }
+})
+
+function createProjectGroup(){
+    clearDisplay();
+    
+    const projectGroup = document.createElement("div");
+    projectGroup.id = "project-group";
+
+    createProjects(projectGroup);
+    contentArea.appendChild(projectGroup);
+}
+
+function createProjects(projectGroup){
+    for(let i=0; i<6; i++){
+        const project = document.createElement('div');
+        project.classList.add('project');
+        projectGroup.appendChild(project);
     }
 }
+
+/***************Projects Section***************/
