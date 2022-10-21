@@ -82,9 +82,33 @@ function createProjectGroup(){
 function createProjects(projectGroup){
     for(let i=0; i<6; i++){
         const project = document.createElement('div');
-        project.classList.add('project');
+        designProject(project);
         projectGroup.appendChild(project);
     }
+}
+
+function designProject(project){
+    project.classList.add('project');
+
+    const projectImg = document.createElement('div');
+    projectImg.classList.add('project-img');
+
+    const description = document.createElement('div');
+    description.classList.add('description');
+
+    const previewBtn = document.createElement('button');
+    previewBtn.classList.add('projectBtn');
+    previewBtn.textContent = 'Preview Project';
+
+    const codeBtn = document.createElement('button');
+    codeBtn.classList.add('projectBtn');
+    codeBtn.textContent = 'View Code';
+
+    description.appendChild(previewBtn);
+    description.appendChild(codeBtn);
+
+    project.appendChild(projectImg);
+    project.appendChild(description);
 }
 
 /***************Projects Section***************/
