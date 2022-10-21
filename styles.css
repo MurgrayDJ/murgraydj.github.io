@@ -69,11 +69,12 @@ h1{
     background-color: #635448;
     flex-grow: 1;
     width: 100%;
+    height: 70vh;
     display: flex;
     justify-content: center;
     align-items: center;
     white-space: nowrap;
-    overflow-x: auto;
+    overflow: auto;
 }
 
 iframe{
@@ -88,11 +89,11 @@ iframe{
 }
 
 #project-group{
-    height: 100%;
-    width: 100vh;
+    height: 70vh;
+    width: auto;
     display: flex;
-    margin-right: auto;
-    align-items:center;
+    flex-wrap: wrap;
+    overflow: auto;
     flex-shrink: 1;
 }
 
@@ -101,9 +102,9 @@ iframe{
     width: 300px;
     background-color: #EBC6B5;
     border-radius: 15px;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin: 40px;
     flex-shrink: 0;
+    flex-grow: 0;
 }
 
 #copyright{
