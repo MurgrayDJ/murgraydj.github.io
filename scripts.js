@@ -106,6 +106,8 @@ function designProjectInfo(projectInfo){
     const description = document.createElement('div');
     description.classList.add('description');
 
+    addDescriptionText(description);
+
     const btnSection = document.createElement('div');
     btnSection.classList.add('btn-section');
 
@@ -113,6 +115,17 @@ function designProjectInfo(projectInfo){
 
     projectInfo.appendChild(description);
     projectInfo.appendChild(btnSection);
+}
+
+function addDescriptionText(description){
+    const projectTitle = document.createElement('h3');
+    projectTitle.textContent = "Sample title";
+
+    const descriptionText = document.createElement('p');
+    descriptionText.textContent = "Project description will go here. Let's see how bad this gets.";
+
+    description.appendChild(projectTitle);
+    description.appendChild(descriptionText);
 }
 
 function addProjectBtns(btnSection){
