@@ -93,9 +93,29 @@ function designProject(project){
     const projectImg = document.createElement('div');
     projectImg.classList.add('project-img');
 
+    const projectInfo = document.createElement('div');
+    projectInfo.classList.add('project-info');
+
+    designProjectInfo(projectInfo);
+
+    project.appendChild(projectImg);
+    project.appendChild(projectInfo);
+}
+
+function designProjectInfo(projectInfo){
     const description = document.createElement('div');
     description.classList.add('description');
 
+    const btnSection = document.createElement('div');
+    btnSection.classList.add('btn-section');
+
+    addProjectBtns(btnSection);
+
+    projectInfo.appendChild(description);
+    projectInfo.appendChild(btnSection);
+}
+
+function addProjectBtns(btnSection){
     const previewBtn = document.createElement('button');
     previewBtn.classList.add('projectBtn');
     previewBtn.textContent = 'Preview Project';
@@ -104,11 +124,8 @@ function designProject(project){
     codeBtn.classList.add('projectBtn');
     codeBtn.textContent = 'View Code';
 
-    description.appendChild(previewBtn);
-    description.appendChild(codeBtn);
-
-    project.appendChild(projectImg);
-    project.appendChild(description);
+    btnSection.appendChild(previewBtn);
+    btnSection.appendChild(codeBtn);
 }
 
 /***************Projects Section***************/

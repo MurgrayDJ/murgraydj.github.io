@@ -121,9 +121,20 @@ iframe{
     min-width: 300px;
 }
 
-.description{
+.project-info{
     height: 90px;
     width: 300px;
+    display: flex;
+}
+
+.description{
+    flex: 1;
+}
+
+.btn-section{
+    flex: 0 0 30px;
+    display: flex;
+    flex-direction: column;
 }
 
 #copyright{
