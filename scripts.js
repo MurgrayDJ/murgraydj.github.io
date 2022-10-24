@@ -130,11 +130,11 @@ function addDescriptionText(description){
 
 function addProjectBtns(btnSection){
     const previewBtn = document.createElement('button');
-    previewBtn.classList.add('projectBtn');
+    previewBtn.classList.add('project-btn');
     previewBtn.textContent = 'Preview Project';
 
     const codeBtn = document.createElement('button');
-    codeBtn.classList.add('projectBtn');
+    codeBtn.classList.add('project-btn');
     codeBtn.textContent = 'View Code';
 
     btnSection.appendChild(previewBtn);

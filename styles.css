@@ -144,15 +144,15 @@ iframe{
     overflow: hidden;
     height: auto;
     justify-content: space-between;
-    padding: 0 3px 3px 3px;
+    padding: 0 3px 3px 0;
 }
 
-.projectBtn{
+.project-btn{
     background-color:#63350F;
     border: none;
     border-radius: 10px;
     color:#EBC6B5;
-    height: 45px;
+    height: 47px;
     width: 110px;
 }
 
@@ -178,7 +178,7 @@ iframe{
 /* Handle */
 ::-webkit-scrollbar-thumb {
     background:#63350F;
-    border-radius: 15px;
+    border-radius: 3px;
 }
 
 /* Handle on hover */
