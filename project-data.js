@@ -21,7 +21,7 @@ const project2 = {
 
 const project3 = {
     name: 'Odin Landing Page',
-    description: 'The Odin Project Landing Page attempt',
+    description: 'A landing page that demonstrates CSS flex-box proficiency.',
     imageLink: 'images/landing-page.png',
     previewLink: 'https://murgray.com/odin-landing-page/',
     codeLink: 'https://github.com/MurgrayDJ/odin-landing-page/'
@@ -29,7 +29,7 @@ const project3 = {
 
 const project4 = {
     name: 'Rock Paper Scissors',
-    description: 'Simulates the rock paper scissors game.',
+    description: 'Simulates the rock paper scissors game. Early javascript practice.',
     imageLink: 'images/rock-paper-scissors.png',
     previewLink: 'https://murgray.com/odin-rock-paper-scissors/',
     codeLink: 'https://github.com/MurgrayDJ/odin-rock-paper-scissors'
@@ -37,7 +37,7 @@ const project4 = {
 
 const project5 = {
     name: 'Odin Recipes',
-    description: 'A sample recipe site.',
+    description: 'A sample recipe site. Practice with file navigation.',
     imageLink: 'images/recipe.png',
     previewLink: 'https://murgray.com/odin-recipes/',
     codeLink: 'https://github.com/MurgrayDJ/odin-recipes/'
