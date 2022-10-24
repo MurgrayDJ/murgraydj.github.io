@@ -93,6 +93,7 @@ function designProject(project, projectDetails){
 
     const projectImg = document.createElement('div');
     projectImg.classList.add('project-img');
+    projectImg.style.backgroundImage = `url(${projectDetails.imageLink})`;
 
     const projectInfo = document.createElement('div');
     projectInfo.classList.add('project-info');

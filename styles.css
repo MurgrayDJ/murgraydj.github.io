@@ -111,12 +111,8 @@ iframe{
 }
 
 .project-img{
-    background-image: url('images/Murgray_chibi_logo.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50%;
-    clip-path: inset(0px 15px 0px 15px);
-    overflow: hidden;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
     min-height: 200px;
     min-width: 300px;
 }
