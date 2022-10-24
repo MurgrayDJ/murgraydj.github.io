@@ -40,8 +40,8 @@ body{
     border-radius: 5px;
 }
 
-.navbar-button:hover{
-    background-color: #635448;
+button:hover{
+    background-color: #8b4b16;
 }
 
 #main-page{
@@ -125,10 +125,11 @@ iframe{
     height: 100px;
     width: 300px;
     display: flex;
+    justify-content:space-between;
 }
 
 .description{
-    width: 210px;
+    width: 180px;
     height: auto;
     white-space: pre-line;
     overflow: auto;
@@ -142,17 +143,17 @@ iframe{
     flex-direction: column;
     overflow: hidden;
     height: auto;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 0 3px 3px 3px;
 }
 
 .projectBtn{
     background-color:#63350F;
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
     color:#EBC6B5;
-    height: 25px;
-    width: 100px;
-    
+    height: 45px;
+    width: 110px;
 }
 
 #copyright{
@@ -171,7 +172,7 @@ iframe{
 
 /* Track */
 ::-webkit-scrollbar-track {
-    background:#EBC6B5;
+    background: none;
 }
 
 /* Handle */
@@ -182,5 +183,5 @@ iframe{
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    background: #555;
+    background:#8b4b16;
 }
