@@ -148,12 +148,20 @@ iframe{
 }
 
 .project-btn{
+    text-decoration: none;
     background-color:#63350F;
     border: none;
     border-radius: 10px;
-    color:#EBC6B5;
+    color:white;
     height: 47px;
     width: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-btn:hover{
+    background:#8b4b16;
 }
 
 #copyright{

@@ -80,14 +80,15 @@ function createProjectGroup(){
 }
 
 function createProjects(projectGroup){
-    for(let i=0; i<6; i++){
+    
+    for(let i = 0; i < projectArray.length; i++){
         const project = document.createElement('div');
-        designProject(project);
+        designProject(project, projectArray[i]);
         projectGroup.appendChild(project);
     }
 }
 
-function designProject(project){
+function designProject(project, projectDetails){
     project.classList.add('project');
 
     const projectImg = document.createElement('div');
@@ -96,46 +97,50 @@ function designProject(project){
     const projectInfo = document.createElement('div');
     projectInfo.classList.add('project-info');
 
-    designProjectInfo(projectInfo);
+    designProjectInfo(projectInfo, projectDetails);
 
     project.appendChild(projectImg);
     project.appendChild(projectInfo);
 }
 
-function designProjectInfo(projectInfo){
+function designProjectInfo(projectInfo, projectDetails){
     const description = document.createElement('div');
     description.classList.add('description');
 
-    addDescriptionText(description);
+    addDescriptionText(description, projectDetails);
 
     const btnSection = document.createElement('div');
     btnSection.classList.add('btn-section');
 
-    addProjectBtns(btnSection);
+    addProjectBtns(btnSection, projectDetails);
 
     projectInfo.appendChild(description);
     projectInfo.appendChild(btnSection);
 }
 
-function addDescriptionText(description){
+function addDescriptionText(description, projectDetails){
     const projectTitle = document.createElement('h3');
-    projectTitle.textContent = "Sample title";
+    projectTitle.textContent = projectDetails.name;
 
     const descriptionText = document.createElement('p');
-    descriptionText.textContent = "Project description will go here. Let's see how bad this gets.";
+    descriptionText.textContent = projectDetails.description;
 
     description.appendChild(projectTitle);
     description.appendChild(descriptionText);
 }
 
-function addProjectBtns(btnSection){
-    const previewBtn = document.createElement('button');
+function addProjectBtns(btnSection, projectDetails){
+    const previewBtn = document.createElement('a');
     previewBtn.classList.add('project-btn');
     previewBtn.textContent = 'Preview Project';
+    previewBtn.setAttribute('href', projectDetails.previewLink);
+    previewBtn.setAttribute('target', '_blank'); //open in new tab
 
-    const codeBtn = document.createElement('button');
+    const codeBtn = document.createElement('a');
     codeBtn.classList.add('project-btn');
     codeBtn.textContent = 'View Code';
+    codeBtn.setAttribute('href', projectDetails.codeLink);
+    codeBtn.setAttribute('target', '_blank');
 
     btnSection.appendChild(previewBtn);
     btnSection.appendChild(codeBtn);
