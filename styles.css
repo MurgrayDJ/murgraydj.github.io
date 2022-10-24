@@ -180,7 +180,10 @@ p{
     position: fixed;
 }
 
-
+#resume-pdf{
+    height: 100%;
+    width: 100%;
+}
 
 /* width */
 ::-webkit-scrollbar {

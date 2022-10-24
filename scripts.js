@@ -13,24 +13,8 @@ function clearDisplay(){
 /***************Resume Section***************/
 const resume_btn = document.getElementById("resume-btn");
 resume_btn.addEventListener("click", () => {
-    const resumePDF = document.getElementById("resume-pdf");
-    if(!resumePDF){
-        embedResume();
-    }
+    document.location.href = 'resume.html';
 })
-
-function embedResume(){
-    clearDisplay();
-
-    const resumePDF = document.createElement("iframe");
-    resumePDF.setAttribute("src", "https://drive.google.com/file/d/1eHoTQjB85OfSjEqraGX0BZoBDA4yCAka/preview");
-    resumePDF.setAttribute("allow", "autoplay");
-    resumePDF.id = "resume-pdf";
-    resumePDF.style.height = "100%";
-    resumePDF.style.width = "100%";
-
-    contentArea.appendChild(resumePDF);
-}
 /***************Resume Section***************/
 
 
