@@ -142,6 +142,17 @@ iframe{
     flex-direction: column;
     overflow: hidden;
     height: auto;
+    justify-content: space-around;
+}
+
+.projectBtn{
+    background-color:#63350F;
+    border: none;
+    border-radius: 5px;
+    color:#EBC6B5;
+    height: 25px;
+    width: 100px;
+    
 }
 
 #copyright{
@@ -149,4 +160,27 @@ iframe{
     text-align: center;
     bottom: 0;
     position: fixed;
+}
+
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background:#EBC6B5;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background:#63350F;
+    border-radius: 15px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
 }
