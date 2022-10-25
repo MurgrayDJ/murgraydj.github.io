@@ -1,25 +1,28 @@
-//All content is appended here (this is the "display")
-const contentArea = document.getElementById("content-area");
-
 //Helper function
-function clearDisplay(){
-    const contentArea = document.getElementById("content-area");
-    if(contentArea.lastChild){
-        contentArea.removeChild(contentArea.lastChild);
+function navigator(filename){
+    if(document.URL.includes('index.html') && filename !== 'index.html'){
+        document.location.href = `html_files/${filename}`;
     }
+    else if(!document.URL.includes('index.html') && filename === 'index.html'){
+        document.location.href = `../${filename}`;
+    }
+    else{
+        document.location.href = `${filename}`;
+    }
+    
 }
 
 /***************About Me Section***************/
 const aboutBtn = document.getElementById("about-btn");
 aboutBtn.addEventListener("click", () => {
-    document.location.href = 'index.html';
+    navigator('index.html');
 })
 /***************About Me Section***************/
 
 /***************Resume Section***************/
 const resume_btn = document.getElementById("resume-btn");
 resume_btn.addEventListener("click", () => {
-    document.location.href = 'resume.html';
+    navigator('resume.html');
 })
 /***************Resume Section***************/
 
@@ -27,13 +30,13 @@ resume_btn.addEventListener("click", () => {
 /***************Projects Section***************/
 const projectBtn = document.getElementById("project-btn");
 projectBtn.addEventListener("click", () => {
-    document.location.href = 'projects.html';
+    navigator('projects.html');
 })
 /***************Projects Section***************/
 
-/***************About Me Section***************/
+/***************Contact Me Section***************/
 const contactBtn = document.getElementById("contact-btn");
 contactBtn.addEventListener("click", () => {
-    document.location.href = 'contact.html';
+    navigator('contact.html');
 })
-/***************About Me Section***************/
+/***************Contact Me Section***************/
