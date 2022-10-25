@@ -30,3 +30,10 @@ projectBtn.addEventListener("click", () => {
     document.location.href = 'projects.html';
 })
 /***************Projects Section***************/
+
+/***************About Me Section***************/
+const contactBtn = document.getElementById("contact-btn");
+contactBtn.addEventListener("click", () => {
+    document.location.href = 'contact.html';
+})
+/***************About Me Section***************/

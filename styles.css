@@ -73,7 +73,7 @@ h1{
     display: flex;
     justify-content: center;
     align-items: center;
-    white-space: nowrap;
+    flex-wrap: wrap;
     overflow: auto;
 }
 
@@ -187,6 +187,25 @@ p{
 #resume-pdf{
     height: 100%;
     width: 100%;
+}
+
+.social-logos{
+    width: 120px;
+    height: 120px;
+    margin: 30px;
+}
+
+#email-me{
+    background-color: white;
+    border-radius: 15px;
+    white-space: pre-line;
+    width: 180px;
+    color: rgb(44, 119, 216);
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10px;
 }
 
 /* width */
