@@ -86,8 +86,10 @@ iframe{
     color: #635448;
     border-radius: 15px;
     font-family:'Times New Roman', Times, serif;
-    height: 300px;
-    width: 500px;
+    height: 250px;
+    width: 400px;
+
+    box-shadow: -8px 8px 8px -3px black;
 }
 
 #project-group{

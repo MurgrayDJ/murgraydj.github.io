@@ -9,16 +9,6 @@ function clearDisplay(){
     }
 }
 
-
-/***************Resume Section***************/
-const resume_btn = document.getElementById("resume-btn");
-resume_btn.addEventListener("click", () => {
-    document.location.href = 'resume.html';
-})
-/***************Resume Section***************/
-
-
-
 /***************About Me Section***************/
 const aboutBtn = document.getElementById("about-btn");
 aboutBtn.addEventListener("click", () => {
@@ -26,6 +16,12 @@ aboutBtn.addEventListener("click", () => {
 })
 /***************About Me Section***************/
 
+/***************Resume Section***************/
+const resume_btn = document.getElementById("resume-btn");
+resume_btn.addEventListener("click", () => {
+    document.location.href = 'resume.html';
+})
+/***************Resume Section***************/
 
 
 /***************Projects Section***************/
