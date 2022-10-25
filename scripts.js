@@ -44,91 +44,88 @@ function displayAboutMe(){
 
 
 
-/***************Projects Section***************/
+// /***************Projects Section***************/
 const projectBtn = document.getElementById("project-btn");
 projectBtn.addEventListener("click", () => {
-    const projectGroup = document.getElementById("project-group");
-    if(!projectGroup){
-        createProjectGroup();
-    }
+    document.location.href = 'projects.html';
 })
 
-function createProjectGroup(){
-    clearDisplay();
+// function createProjectGroup(){
+//     clearDisplay();
     
-    const projectGroup = document.createElement("div");
-    projectGroup.id = "project-group";
+//     const projectGroup = document.createElement("div");
+//     projectGroup.id = "project-group";
 
-    createProjects(projectGroup);
-    contentArea.appendChild(projectGroup);
-}
+//     createProjects(projectGroup);
+//     contentArea.appendChild(projectGroup);
+// }
 
-function createProjects(projectGroup){
+// function createProjects(projectGroup){
     
-    for(let i = 0; i < projectArray.length; i++){
-        const project = document.createElement('div');
-        designProject(project, projectArray[i]);
-        projectGroup.appendChild(project);
-    }
-}
+//     for(let i = 0; i < projectArray.length; i++){
+//         const project = document.createElement('div');
+//         designProject(project, projectArray[i]);
+//         projectGroup.appendChild(project);
+//     }
+// }
 
-function designProject(project, projectDetails){
-    project.classList.add('project');
+// function designProject(project, projectDetails){
+//     project.classList.add('project');
 
-    const projectImg = document.createElement('div');
-    projectImg.classList.add('project-img');
-    projectImg.style.backgroundImage = `url(${projectDetails.imageLink})`;
+//     const projectImg = document.createElement('div');
+//     projectImg.classList.add('project-img');
+//     projectImg.style.backgroundImage = `url(${projectDetails.imageLink})`;
 
-    const projectInfo = document.createElement('div');
-    projectInfo.classList.add('project-info');
+//     const projectInfo = document.createElement('div');
+//     projectInfo.classList.add('project-info');
 
-    designProjectInfo(projectInfo, projectDetails);
+//     designProjectInfo(projectInfo, projectDetails);
 
-    project.appendChild(projectImg);
-    project.appendChild(projectInfo);
-}
+//     project.appendChild(projectImg);
+//     project.appendChild(projectInfo);
+// }
 
-function designProjectInfo(projectInfo, projectDetails){
-    const description = document.createElement('div');
-    description.classList.add('description');
+// function designProjectInfo(projectInfo, projectDetails){
+//     const description = document.createElement('div');
+//     description.classList.add('description');
 
-    addDescriptionText(description, projectDetails);
+//     addDescriptionText(description, projectDetails);
 
-    const btnSection = document.createElement('div');
-    btnSection.classList.add('btn-section');
+//     const btnSection = document.createElement('div');
+//     btnSection.classList.add('btn-section');
 
-    addProjectBtns(btnSection, projectDetails);
+//     addProjectBtns(btnSection, projectDetails);
 
-    projectInfo.appendChild(description);
-    projectInfo.appendChild(btnSection);
-}
+//     projectInfo.appendChild(description);
+//     projectInfo.appendChild(btnSection);
+// }
 
-function addDescriptionText(description, projectDetails){
-    const projectTitle = document.createElement('h3');
-    projectTitle.textContent = projectDetails.name;
+// function addDescriptionText(description, projectDetails){
+//     const projectTitle = document.createElement('h3');
+//     projectTitle.textContent = projectDetails.name;
 
-    const descriptionText = document.createElement('p');
-    descriptionText.textContent = projectDetails.description;
+//     const descriptionText = document.createElement('p');
+//     descriptionText.textContent = projectDetails.description;
 
-    description.appendChild(projectTitle);
-    description.appendChild(descriptionText);
-}
+//     description.appendChild(projectTitle);
+//     description.appendChild(descriptionText);
+// }
 
-function addProjectBtns(btnSection, projectDetails){
-    const previewBtn = document.createElement('a');
-    previewBtn.classList.add('project-btn');
-    previewBtn.textContent = 'Preview Project';
-    previewBtn.setAttribute('href', projectDetails.previewLink);
-    previewBtn.setAttribute('target', '_blank'); //open in new tab
+// function addProjectBtns(btnSection, projectDetails){
+//     const previewBtn = document.createElement('a');
+//     previewBtn.classList.add('project-btn');
+//     previewBtn.textContent = 'Preview Project';
+//     previewBtn.setAttribute('href', projectDetails.previewLink);
+//     previewBtn.setAttribute('target', '_blank'); //open in new tab
 
-    const codeBtn = document.createElement('a');
-    codeBtn.classList.add('project-btn');
-    codeBtn.textContent = 'View Code';
-    codeBtn.setAttribute('href', projectDetails.codeLink);
-    codeBtn.setAttribute('target', '_blank');
+//     const codeBtn = document.createElement('a');
+//     codeBtn.classList.add('project-btn');
+//     codeBtn.textContent = 'View Code';
+//     codeBtn.setAttribute('href', projectDetails.codeLink);
+//     codeBtn.setAttribute('target', '_blank');
 
-    btnSection.appendChild(previewBtn);
-    btnSection.appendChild(codeBtn);
-}
+//     btnSection.appendChild(previewBtn);
+//     btnSection.appendChild(codeBtn);
+// }
 
-/***************Projects Section***************/
+// /***************Projects Section***************/
