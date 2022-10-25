@@ -137,14 +137,15 @@ iframe{
     width: 300px;
     display: flex;
     justify-content:space-between;
+    color:#63350F;
 }
 
 .description{
     width: 180px;
     height: auto;
     white-space: pre-line;
-    overflow: auto;
-    padding-left: 5px;
+    padding-left: 10px;
+    margin-right: 5px;
 }
 
 h3{
