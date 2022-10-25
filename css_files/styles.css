@@ -91,7 +91,7 @@ iframe{
     border: none;
 }
 
-#about-me{
+.about-cards{
     background-color: #EEE2DC;
     color: #2F5C8F;
     border-radius: 15px;
@@ -99,7 +99,6 @@ iframe{
     width: 400px;
     padding: 10px;
     box-shadow: -8px 8px 8px -3px black;
-    margin-right: 50px;
 }
 
 #selfie{
@@ -107,6 +106,7 @@ iframe{
     width: 270px;
     border-radius: 15px;
     box-shadow: -8px 8px 8px -3px black;
+    margin: 0 50px;
 }
 
 #project-group{
