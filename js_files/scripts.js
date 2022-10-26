@@ -12,6 +12,11 @@ function navigator(filename){
     
 }
 
+const siteIcon = document.getElementById('site-icon');
+siteIcon.addEventListener("click", () => {
+    navigator('index.html');
+})
+
 /***************About Me Section***************/
 const aboutBtn = document.getElementById("about-btn");
 aboutBtn.addEventListener("click", () => {
@@ -20,8 +25,8 @@ aboutBtn.addEventListener("click", () => {
 /***************About Me Section***************/
 
 /***************Resume Section***************/
-const resume_btn = document.getElementById("resume-btn");
-resume_btn.addEventListener("click", () => {
+const resumeBtn = document.getElementById("resume-btn");
+resumeBtn.addEventListener("click", () => {
     navigator('resume.html');
 })
 /***************Resume Section***************/
