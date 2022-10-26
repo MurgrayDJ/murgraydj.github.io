@@ -129,6 +129,14 @@ h1{
     width: 400px;
     padding: 10px;
     box-shadow: -8px 8px 8px -3px black;
+
+    border: solid #2F5C8F;
+    border-width: 5px;
+}
+
+.about-cards > h3{
+    margin-top: 7px;
+    margin-bottom: 3px;
 }
 
 #selfie{
@@ -152,16 +160,20 @@ h1{
 }
 
 .project{
-    height: 300px;
-    width: 300px;
+    height: 325px;
+    width: 325px;
     background-color: #EEE2DC;
-    border-radius: 15px;
+    border-radius: 20px;
     margin: 40px;
     flex-shrink: 0;
     flex-grow: 0;
 
     display: flex;
     flex-direction: column;
+
+
+    border: solid #2F5C8F;
+    border-width: 5px;
 
     box-shadow: -8px 8px 8px -3px black;
 }
@@ -170,15 +182,15 @@ h1{
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     height: 200px;
-    width: 300px;
+    width: 325px;
 }
 
 .project-info{
-    height: 100px;
-    width: 300px;
+    height: 125px;
+    width: 315px;
     display: flex;
-    justify-content:space-between;
-    color:#63350F;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
 }
 
 .description{
@@ -187,10 +199,11 @@ h1{
     white-space: pre-line;
     padding-left: 10px;
     margin-right: 5px;
+    color: #2F5C8F;
 }
 
-h3{
-    margin-top: 3px;
+.description > h3{
+    margin-top: 15px;
     margin-bottom: 3px;
 }
 
@@ -206,9 +219,8 @@ p{
     flex-direction: column;
     overflow: hidden;
     height: 100px;
-    justify-content: center;
-    padding: 0 3px;
-    gap: 5px;
+    padding: 15px 10px;
+    gap: 15px;
 }
 
 .project-btn{
@@ -218,7 +230,7 @@ p{
     border-radius: 10px;
     color:white;
     height: 40px;
-    width: 110px;
+    width: 115px;
     display: flex;
     justify-content: center;
     align-items: center;

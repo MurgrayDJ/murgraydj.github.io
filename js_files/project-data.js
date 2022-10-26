@@ -109,12 +109,14 @@ function addDescriptionText(description, projectDetails){
 function addProjectBtns(btnSection, projectDetails){
     const previewBtn = document.createElement('a');
     previewBtn.classList.add('project-btn');
+    previewBtn.classList.add('grow');
     previewBtn.textContent = 'Preview Project';
     previewBtn.setAttribute('href', projectDetails.previewLink);
     previewBtn.setAttribute('target', '_blank'); //open in new tab
 
     const codeBtn = document.createElement('a');
     codeBtn.classList.add('project-btn');
+    codeBtn.classList.add('grow');
     codeBtn.textContent = 'View Code';
     codeBtn.setAttribute('href', projectDetails.codeLink);
     codeBtn.setAttribute('target', '_blank');
