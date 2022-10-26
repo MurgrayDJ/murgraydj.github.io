@@ -1,13 +1,15 @@
 //Helper function
 function navigator(filename){
-    if(window.location.href.includes('index.html') && filename !== 'index.html'){
-        window.location.href = `./html_files/${filename}`;
+    console.log(on_index);
+
+    if(on_index === true && filename !== 'index.html'){
+        window.location.href = `html_files/${filename}`;
     }
-    else if(!window.location.href.includes('index.html') && filename === 'index.html'){
+    else if(on_index === false && filename === 'index.html'){
         window.location.href = `../${filename}`;
     }
     else{
-        window.location.href = `./${filename}`;
+        window.location.href = `${filename}`;
     }
     
 }
