@@ -66,6 +66,7 @@ function createProjects(projectGroup){
 function designProject(project, projectDetails){
     project.classList.add('project');
     project.classList.add('grow');
+    project.classList.add('shrink');
 
     const projectImg = document.createElement('div');
     projectImg.classList.add('project-img');
@@ -110,6 +111,8 @@ function addProjectBtns(btnSection, projectDetails){
     const previewBtn = document.createElement('a');
     previewBtn.classList.add('project-btn');
     previewBtn.classList.add('grow');
+    previewBtn.classList.add('shrink');
+
     previewBtn.textContent = 'Preview Project';
     previewBtn.setAttribute('href', projectDetails.previewLink);
     previewBtn.setAttribute('target', '_blank'); //open in new tab
@@ -117,6 +120,8 @@ function addProjectBtns(btnSection, projectDetails){
     const codeBtn = document.createElement('a');
     codeBtn.classList.add('project-btn');
     codeBtn.classList.add('grow');
+    codeBtn.classList.add('shrink');
+    
     codeBtn.textContent = 'View Code';
     codeBtn.setAttribute('href', projectDetails.codeLink);
     codeBtn.setAttribute('target', '_blank');

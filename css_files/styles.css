@@ -98,6 +98,10 @@ h1{
     transform: scale(1.1); 
 }
 
+.shrink:active { 
+    transform: translateY(4px);
+}
+
 
 
 /* Scrollbar */
