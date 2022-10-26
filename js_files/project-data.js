@@ -5,7 +5,7 @@
 
 const project1 = {
     name: 'Calcutelator',
-    description: 'This is a simple (cute) calculator.',
+    description: 'This is simply a (cute) calculator.',
     imageLink: '../images/project-images/calculator.png',
     previewLink: 'https://murgray.com/calculator/',
     codeLink: 'https://github.com/MurgrayDJ/calculator'
@@ -29,7 +29,7 @@ const project3 = {
 
 const project4 = {
     name: 'Rock Paper Scissors',
-    description: 'Simulates the rock paper scissors game. Early javascript practice.',
+    description: 'Simulates the rock paper scissors game. Shows early javascript practice.',
     imageLink: '../images/project-images/rock-paper-scissors.png',
     previewLink: 'https://murgray.com/odin-rock-paper-scissors/',
     codeLink: 'https://github.com/MurgrayDJ/odin-rock-paper-scissors'
@@ -37,7 +37,7 @@ const project4 = {
 
 const project5 = {
     name: 'Odin Recipes',
-    description: 'A sample recipe site. Practice with file navigation.',
+    description: 'A sample recipe site for practice with file navigation.',
     imageLink: '../images/project-images/recipe.png',
     previewLink: 'https://murgray.com/odin-recipes/',
     codeLink: 'https://github.com/MurgrayDJ/odin-recipes/'
