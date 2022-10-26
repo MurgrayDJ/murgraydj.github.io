@@ -65,6 +65,7 @@ function createProjects(projectGroup){
 
 function designProject(project, projectDetails){
     project.classList.add('project');
+    project.classList.add('grow');
 
     const projectImg = document.createElement('div');
     projectImg.classList.add('project-img');
