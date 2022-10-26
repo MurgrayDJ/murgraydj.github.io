@@ -1,13 +1,13 @@
 //Helper function
 function navigator(filename){
     if(document.URL.includes('index.html') && filename !== 'index.html'){
-        document.location.href = `html_files/${filename}`;
+        document.location.href = `./html_files/${filename}`;
     }
     else if(!document.URL.includes('index.html') && filename === 'index.html'){
         document.location.href = `../${filename}`;
     }
     else{
-        document.location.href = `${filename}`;
+        document.location.href = `./${filename}`;
     }
     
 }
