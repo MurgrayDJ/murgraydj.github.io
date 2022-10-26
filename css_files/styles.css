@@ -246,6 +246,11 @@ p{
     color:#2F5C8F;
 }
 
+#social-msg{
+    color:#2F5C8F;
+    font-size: small;
+}
+
 /* width */
 ::-webkit-scrollbar {
     width: 15px;
