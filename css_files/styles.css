@@ -151,6 +151,13 @@ h1{
     margin: 0 50px;
 }
 
+#files-link, #files-link:visited{
+    color: #2F5C8F;
+}
+
+#files-link:hover, #files-link:active{
+    color: #4a93e6;
+}
 
 
 /* Projects Page */
