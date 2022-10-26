@@ -7,6 +7,7 @@ black
 white
 */
 
+/* CSS for all pages */
 body{
     display: flex;
     min-height: 100vh;
@@ -17,7 +18,7 @@ body{
     background-color: lightgray;
 }
 
-#nav-bar{
+#navbar{
     height: 100vh;
     width: 200px;
     flex-shrink: 0;
@@ -37,7 +38,7 @@ body{
     box-shadow: -8px 8px 8px -3px black;
 }
 
-#buttons{
+#navbar-buttons{
     display: flex;
     flex-direction: column;
     gap: 25px;
@@ -89,10 +90,29 @@ h1{
     overflow: auto;
 }
 
-iframe{
-    border: none;
+
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 15px;
 }
 
+::-webkit-scrollbar-track {
+    background: none;
+}
+
+::-webkit-scrollbar-thumb {
+    background:#2F5C8F;
+    border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background:#4a93e6;
+}
+
+
+
+/* About Me Page */
 .about-cards{
     background-color: #EEE2DC;
     color: #2F5C8F;
@@ -111,6 +131,9 @@ iframe{
     margin: 0 50px;
 }
 
+
+
+/* Projects Page */
 #project-group{
     height: 70vh;
     width: auto;
@@ -197,11 +220,11 @@ p{
     background:#4a93e6;
 }
 
-#copyright{
-    color: #2F5C8F;
-    text-align: center;
-    bottom: 0;
-    position: fixed;
+
+
+/* Resume Page */
+iframe{
+    border: none;
 }
 
 #resume-pdf{
@@ -209,6 +232,9 @@ p{
     width: 100%;
 }
 
+
+
+/* Contact Me page */
 .social-link{
     margin: 30px;
 }
@@ -253,25 +279,4 @@ p{
 #social-msg{
     color:#2F5C8F;
     font-size: small;
-}
-
-/* width */
-::-webkit-scrollbar {
-    width: 15px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-    background: none;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-    background:#2F5C8F;
-    border-radius: 3px;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-    background:#4a93e6;
 }
