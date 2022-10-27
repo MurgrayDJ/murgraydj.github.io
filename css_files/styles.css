@@ -67,8 +67,9 @@ header, footer{
     width: 100%;
     min-height: 15vh;
     background-color: #EEE2DC;
+}
 
-
+header{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -88,6 +89,13 @@ h1{
     align-items: center;
     flex-wrap: wrap;
     overflow: auto;
+}
+
+footer{
+    color: #2F5C8F;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
 }
 
 .grow { 
@@ -262,6 +270,25 @@ iframe{
 
 
 /* Contact Me page */
+#social-content{
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+#app-container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
 .social-link{
     margin: 30px;
 }
@@ -305,4 +332,5 @@ iframe{
 #social-msg{
     color:#2F5C8F;
     font-size: small;
+    align-self: flex-start;
 }
