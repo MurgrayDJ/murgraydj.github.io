@@ -31,6 +31,12 @@ body{
     overflow-y: auto;
 }
 
+@media screen and (min-width: 600px) {
+    #navbar{
+        flex-shrink: 0;
+    }
+}
+
 @media screen and (max-width: 600px){
     #navbar{
         max-width: 0;
